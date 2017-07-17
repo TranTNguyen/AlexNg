@@ -19,9 +19,9 @@ vector<vector<int>> readNumberFromFile(const string& filename)
     return myArray;
 }
 
-int computeWinLoss(vector<vector<int>> number,int tossUpNum, int win, int lost)
+int computeWinLoss(vector<vector<int>> number,int tossUpNum)
 {
-    int result;
+    int win = 0, lost = 0, result;
     for(int i = 0; i< number.size(); i++)
     {
         if (number[i][0] == tossUpNum)
@@ -34,15 +34,12 @@ int computeWinLoss(vector<vector<int>> number,int tossUpNum, int win, int lost)
         }
     }
     result = win - lost;
-    cout << "Your result: " << result;
-    
-    return tossUpNum;
+    return result;
 }
 
 
 int main(){
-    int winNum, winAmount = 0, lostAmount = 0;
-    
+    int winNum;
     vector<vector<int>> myArray = readNumberFromFile("Ticket.txt");
     
     // display the numbers from file on screen
@@ -56,7 +53,9 @@ int main(){
     cout << endl;
     cout << "Enter the toss-up number: "; // enter the win number
     cin >> winNum;
-    computeWinLoss(myArray, winNum, winAmount, lostAmount);
+    
+    int result = computeWinLoss(myArray, winNum);
+    cout << "Your result: " << result;
     
     cout << endl << endl;
     system("pause");
