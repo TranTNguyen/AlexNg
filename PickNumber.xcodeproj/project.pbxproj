@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4609CDCE1F118BAE00037B04 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4609CDCD1F118BAE00037B04 /* main.cpp */; };
+		4609CDD61F118C3100037B04 /* ReadFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4609CDD41F118C3100037B04 /* ReadFile.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +24,8 @@
 
 /* Begin PBXFileReference section */
 		4609CDCA1F118BAE00037B04 /* PickNumber */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PickNumber; sourceTree = BUILT_PRODUCTS_DIR; };
-		4609CDCD1F118BAE00037B04 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		4609CDD41F118C3100037B04 /* ReadFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ReadFile.cpp; sourceTree = "<group>"; };
+		4609CDD51F118C3100037B04 /* ReadFile.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ReadFile.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +58,8 @@
 		4609CDCC1F118BAE00037B04 /* PickNumber */ = {
 			isa = PBXGroup;
 			children = (
-				4609CDCD1F118BAE00037B04 /* main.cpp */,
+				4609CDD41F118C3100037B04 /* ReadFile.cpp */,
+				4609CDD51F118C3100037B04 /* ReadFile.hpp */,
 			);
 			path = PickNumber;
 			sourceTree = "<group>";
@@ -119,7 +121,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4609CDCE1F118BAE00037B04 /* main.cpp in Sources */,
+				4609CDD61F118C3100037B04 /* ReadFile.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +250,7 @@
 				4609CDD31F118BAE00037B04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
